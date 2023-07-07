@@ -1,0 +1,225 @@
+/* css reset */
+#foot{
+    color: aquamarine;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    color: rgb(251, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+} */
+html{
+    scroll-behavior: smooth;
+    scroll-behavior: auto;
+}
+/* css variblr */
+:root{
+    --navbarhigh: 70px;
+    --backgroundurl: url('foood4.avif')
+}
+ /* naviation bar */
+ #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    opacity: .1;
+    top: 0px;
+    left: 0px;
+
+ }
+ #navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+/* navigation bar :logo k style  */
+#logo{
+    margin: 25px 34px;
+    /* height: 34px; */
+}
+img{
+    
+    height:70px;
+}
+/* list ko styling */
+ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+ul li{
+    background-color: rgba(88, 88, 237, 0);
+    font-size: 1.3rem;
+    
+}
+a{  display: block;
+     text-decoration: none;
+     padding: 3px 13px;
+     border-radius: 16px;
+     border-color: yellow;
+
+}
+a:hover{
+    background-color: wheat;
+    color: black;
+}
+/* homesection */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 70px;
+    justify-content: center;
+    align-items: center;
+    height: 363px;
+}
+
+#home::before{
+    content: "";
+    background: var(--backgroundurl) no-repeat center center/cover ;
+    
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    top: 0px;
+    left: 0px;
+
+ }
+#home h1{
+    color: rgb(255, 255, 255,2);
+    text-align: center;
+ }
+ #home p{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+/* services section */
+#service{
+    margin: 34px;
+    display: flex;
+    
+}
+
+#service .box{
+    border: 3px solid yellow;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 25px;
+    background-color: rgb(144, 137, 137);
+    
+}
+#service .box img{
+height: 160px;
+display: block;
+margin: auto;
+}
+#service p {font-family: 'Courier New', Courier, monospace;
+font-size: 1.rem;
+font: bold ; }
+#service { }
+#service { }
+
+/* clients section  */
+
+#client-section{
+
+position: relative;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('foodno5.avif')no-repeat center center/cover ;
+    width: 100%;
+    height: 55%;
+    z-index: -3;
+    opacity: .6;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#client img{
+    height: 106;
+}
+
+/* contactsection */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('contact.jpeg') no-repeat center center/cover;
+}
+#contact-box{display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+ width: 100%;
+ padding: .4rem;
+ font-size: 1.3rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: initial;
+}
+
+footer{
+    background-color:wheat
+}
+
+ /* utility classs sabke liye disgine */
+ .h-primary{
+    font-size: 3rem;
+    padding: 12px;
+ }
+ .h-secondary{
+    font-size: 2.8rem;
+    padding: 12pxgw;
+ }
+ .btn{
+    padding: 7px 16px;
+    border: 3px solid rgb(255, 140, 0);
+    background-color: rgb(200, 205, 205);
+    margin: 16px;
+    color: rgb(160, 134, 134);
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif; border-radius: 30px;
+ }
+  
+
+    .btn:hover{
+        background-color: rgb(130, 163, 86);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #000;
+        cursor: pointer;
+       
+    }
+    .center{
+        text-align: center;
+    }
+    

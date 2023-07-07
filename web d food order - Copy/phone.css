@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(255, 0, 0);
+}
+/* navigation sextion me yha hoga */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0 7px;
+}
+
+
+/* home section me yha higa */
+ #home{
+    height: 280px;
+ }
+
+ #home::before{
+    height: 480px;
+    padding: 35px 150px;
+ }
+/* service section yha  */
+
+#service{
+    display: flex;
+    flex-direction: column;
+
+}
+#service .box{
+padding: 15px;
+margin: 3px 15px;
+margin-bottom: 20px;
+}
+
+
+/* client sections me yha hoga kaam */
+
+#clients {
+    flex-wrap: wrap;
+}
+#clients img{
+width: 66px;
+padding: 3px 7px;
+}
+
+
+
+/* contact us ka kaam yha :-ms-keyboard-active  */
+
+#contact-box form{
+    width: 80%;
+}
+/* utility classess */
+.h-primary{
+    font-size: 25px;
+}
+
+.btn{
+    font-size: 13px;
+    padding:4px 7px ;
+}
